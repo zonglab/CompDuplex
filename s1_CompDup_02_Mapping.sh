@@ -23,7 +23,8 @@ PROJECT_ID=${1}
 SAMPLE__ID=${2}
 NORMALBULK=${3}
 
-WORK___DIR=/storage/zongarchive/Yang/2_duplex_bulk/1_SMaHT/${SAMPLE__ID}
+SCRIPT_DIR=PATH/TO/SCRIPT_DIR
+WORK___DIR=PATH/TO/PARENTAL_DIR/${PROJECT_ID}/${SAMPLE__ID}
 mkdir -p ${WORK___DIR}/0_log ${WORK___DIR}/0_scripts
 cd       ${WORK___DIR}
 
@@ -40,7 +41,7 @@ seqtk mergepe 03_tmm_R1.fastq.gz 03_tmm_R2.fastq.gz | \
 pigz        > 03_merged.fastq.gz
 
 bwa mem -t 8 \
--p   /storage/zong/ref/hg19/hg19_bwa_index/hg19.fa \
+-p   PATH/TO/REFSEQ.fa \
      03_merged.fastq.gz | \
 samtools view -bS - \
 >    04_alignment.bam
