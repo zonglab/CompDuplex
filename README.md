@@ -1,4 +1,4 @@
-To run this pipeline, run the following command:
+To run this pipeline, run the following command:  
 bash SCRIPTs/s1_CompDup_00_submit_job.sh <working_dir> <fq___prefix> <normal_bulk_path>
 <working_dir>: ideally, the absolute path to where you want to store the analysis results
 <fq___prefix>: path and prefix to the sequenced fastq files, e.g.: /PATH/TO/PREFIX corresponding to /PATH/TO/PREFIX_R1[_001].fastq.gz
