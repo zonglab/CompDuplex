@@ -43,22 +43,6 @@ ${NORML_BULK} \
 ${BULK__PATH}
 
 #################################################################
-printf "\n\n Wait for bam_add_META_tag to finish"
-#################################################################
-## Wait for bam_add_META_tag to finish
-for chr in 1 3 5 7 9 11 13 15 17 19 21 X 2 4 6 8 10 12 14 16 18 20 22 Y
-do
-    FILE=split/complete/${chr}.txt
-    while true; do
-        if [[ -f "$FILE" ]]; then
-           echo "$FILE exists." && break
-          else
-           printf '$(date +"%T") \n waiting for $FILE' && sleep 3m
-         fi
-    done
-done
-
-#################################################################
 printf "\n\n Get Germline and Somatic"
 #################################################################
 BULK__BAM=${BULK__PATH}/05_${NORML_BULK}_add_RG.bam
