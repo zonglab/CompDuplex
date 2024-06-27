@@ -61,11 +61,9 @@ A custom Python script was used to traverse each raw variant. A variant would be
 6. The variant base is localized more than 13 bases away from the 5’ end of the insert gDNA fragment to filter out mapping errors and newly synthesized bases by Q5 DNA polymerase gap filling.
 7. The 5’ soft clip, if present, should not exceed 20 bases in length.
 
-A full list of called somatic mutations is provided in Supplementary Table 6.
-
 ### Allele Coverage Depth
 
-On the basis of single molecule detection, by dividing the number of called germline heterozygous mutations (without deduplication of the same mutations called from different original DNA fragments) by the total number of germline heterozygous mutations, we can determine the allele coverage depth for mutation calling (Supplementary Table 1, 3, 4). 
+On the basis of single molecule detection, by dividing the number of called germline heterozygous mutations (without deduplication of the same mutations called from different original DNA fragments) by the total number of germline heterozygous mutations, we can determine the allele coverage depth for mutation calling. 
 
 ### Somatic Mutation Calling Criteria
 
