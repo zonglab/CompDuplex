@@ -3,7 +3,8 @@
 
 ## Data Acquisition
 
-Data acquisition follows the protocol described in the [CompDuplex: Accurate Detection of Somatic Mutations](https://www.protocols.io/view/compduplex-accurate-detection-of-somatic-mutations-kxygx3x4og8j/v1).
+Data acquisition follows the protocol described in  
+the [CompDuplex: Accurate Detection of Somatic Mutations](https://www.protocols.io/view/compduplex-accurate-detection-of-somatic-mutations-kxygx3x4og8j/v1).
 
 ## Running the Pipeline
 
@@ -95,11 +96,3 @@ For equal footing comparison of cord blood mutation burdens and mutational signa
 - `pysam 0.22.1`
 - `numpy 1.26.4`
 - `pandas 2.2.2`
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## Acknowledgments
-
-Special thanks to the contributors and the scientific community for their invaluable support and guidance.
